@@ -19,9 +19,9 @@ export default  function Cesta () {
 
         </View>
         
-        <Text style={estilos.descricao}>Uma cesta de prudutos 
+        <Texto style={estilos.descricao}>Uma cesta de prudutos 
             selecionados cuidadosamente da 
-            fazenda direto para a sua cozinha</Text>
+            fazenda direto para a sua cozinha</Texto>
         <Text style={estilos.preco}>R$ 40,00</Text>    
 
     </View>
