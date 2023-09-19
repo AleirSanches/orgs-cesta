@@ -22,7 +22,7 @@ export default  function Detalhes (){
 }
 
 const estilos = StyleSheet.create({
-   
+  
     nome:{
         fontSize:26,
         fontWeight:"bold",
