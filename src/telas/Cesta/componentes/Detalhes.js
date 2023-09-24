@@ -1,7 +1,7 @@
 import React from "react";
 import logo from '../../../../assets/logo.png'
 import Texto from '../../../componentes/texto'
-import { Image,View, StyleSheet } from "react-native";
+import { Image,View, StyleSheet, Text } from "react-native";
 
 
 export default  function Detalhes (){
@@ -16,7 +16,7 @@ export default  function Detalhes (){
         <Texto style={estilos.descricao}>Uma cesta de prudutos 
             selecionados cuidadosamente da 
             fazenda direto para a sua cozinha</Texto>
-        <Texto style={estilos.preco}>R$ 40,00</Texto>    
+        <Text style={estilos.preco}>R$ 40,00</Text>    
     </>
 
 }

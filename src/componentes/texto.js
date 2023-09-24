@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 export default function Texto ({children, style}){
     let estilo= estilos.texto;
