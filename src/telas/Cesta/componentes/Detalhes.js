@@ -5,7 +5,7 @@ import { Image,View, StyleSheet, Text, TouchableOpacity} from "react-native";
 
 
 export default  function Detalhes ( nome, imagemFazenda, fazenda, descricao, preco, botao){
-    return <>
+    return < >
         <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.linha}>
             <Image style={estilos.imagemFazenda} source={imagemFazenda}></Image>
