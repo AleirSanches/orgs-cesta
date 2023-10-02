@@ -15,7 +15,8 @@ export default  function Detalhes ( nome, imagemFazenda, fazenda, descricao, pre
         
         <Texto style={estilos.descricao}>{descricao}</Texto>
         <Text style={estilos.preco}>{preco}</Text>   
-        <TouchableOpacity style={estilos.botao}>
+
+        <TouchableOpacity style={estilos.botao} onPress = {()=>{}}>
             <Texto style = {estilos.textoBotao}>{botao}</Texto>
             </TouchableOpacity> 
     </>
