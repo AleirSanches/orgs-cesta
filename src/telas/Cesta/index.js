@@ -2,7 +2,8 @@ import React from "react";
 import {FlatList, StyleSheet, View  } from "react-native";
 import Detalhes from '../Cesta/componentes/Detalhes';
 import Topo from '../Cesta/componentes/topo';
-import Itens from './componentes/Item';
+import Item from './componentes/Item';
+import Texto from '../../componentes/texto';
 
 
 
@@ -10,7 +11,7 @@ export default  function Cesta (topo , detalhes, itens) {
    return <>
 
     <FlatList
-            data={Itens.lista}
+            data={Item.lista}
             renderItem={Item}
             keyExtractor={({nome}) => nome}
             
@@ -21,7 +22,7 @@ export default  function Cesta (topo , detalhes, itens) {
                 <View style={estilos.principal}> 
 
                 <Detalhes {...detalhes}/>
-                <Texto>{itens.titulo}</Texto>
+                <Texto style={estilos.titulo}>{itens.titulo}</Texto>
                 </View>
 
                 </>     
@@ -37,6 +38,15 @@ export default  function Cesta (topo , detalhes, itens) {
 }
 
 const estilos = StyleSheet.create({
+
+    titulo: {
+        color: "#464646",
+        fontWeight: "bold",
+        marginTop: 32,
+        marginBottom: 8,
+        fontSize: 20,
+        lineHeight: 32,
+      },
    
     principal:{
         paddingVertical: 8,

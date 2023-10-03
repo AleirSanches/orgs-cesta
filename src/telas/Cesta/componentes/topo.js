@@ -30,4 +30,4 @@ const estilos = StyleSheet.create({
         
        
     },
-    })
+    });
