@@ -4,12 +4,12 @@ import Texto from '../../../componentes/texto'
 import { Image,View, StyleSheet, Text, TouchableOpacity} from "react-native";
 
 
-export default  function Detalhes ( nome, imagemFazenda, fazenda, descricao, preco, botao){
+export default  function Detalhes ( nome, logoFazenda, nomeFazenda, descricao, preco, botao){
     return < >
         <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.linha}>
-            <Image style={estilos.imagemFazenda} source={imagemFazenda}></Image>
-            <Texto style={estilos.fazenda}>{fazenda}</Texto>
+            <Image style={estilos.imagemFazenda} source={logoFazenda}></Image>
+            <Texto style={estilos.fazenda}>{nomeFazenda}</Texto>
 
         </View>
         
